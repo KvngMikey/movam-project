@@ -17,3 +17,62 @@
     letter-spacing: 0.2px;
   }
 }
+
+.feedback-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.like-icon {
+  background-color: aliceblue;
+  border-radius: 30px;
+  align-self: center;
+  width: 15%;
+  margin-bottom: 50px;
+}
+
+.thank-you {
+  font-family: "Roboto";
+  font-size: 45px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  margin-bottom: 20px;
+}
+
+.joiner {
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #252b42;
+}
+
+.name,
+.email {
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  margin-bottom: 25px;
+}
+
+.message {
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+
+.figma-land {
+  font-family: "Roboto";
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}

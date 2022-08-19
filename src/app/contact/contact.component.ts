@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-contact',
@@ -10,9 +11,12 @@ import { Router } from '@angular/router';
 export class ContactComponent implements OnInit {
   registerForm: FormGroup;
   submitted = false;
-  reportSubmitted = [];
 
-  constructor(private fb: FormBuilder, private router: Router) {}
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private dataService: DataService
+  ) {}
 
   ngOnInit(): void {
     this.registerForm = this.fb.group({
@@ -29,9 +33,10 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
     if (this.registerForm.valid) {
-      // alert('Form Submitted succesfully!!!');
-      this.reportSubmitted.push(this.registerForm.value);
+      alert('Form Submitted succesfully!!!');
+      this.dataService.reportSubmitted.next(this.registerForm.value);
       this.router.navigate(['/feedback']);
+      this.registerForm.reset();
     }
   }
 }
