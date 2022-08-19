@@ -1,4 +1,12 @@
-<button type="btn" class="btn btn-primary" routerLink="/home">
-  <span>Back to Home</span>
-</button>
-<p>feedback works!</p>
+<div class="back">
+  <div class="send-btn-wrapper">
+    <button type="submit" class="btn btn-primary send-btn" routerLink="/home">
+      <span class="send-btn-text">Back to home</span>
+    </button>
+  </div>
+</div>
+
+<div *ngFor="let reportSubmit of reportSubmitted">
+  {{ reportSubmit.email }}
+  <p>feedback works!</p>
+</div>

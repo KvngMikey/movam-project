@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -29,7 +29,7 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
     if (this.registerForm.valid) {
-      alert('Form Submitted succesfully!!!');
+      // alert('Form Submitted succesfully!!!');
       this.reportSubmitted.push(this.registerForm.value);
       this.router.navigate(['/feedback']);
     }

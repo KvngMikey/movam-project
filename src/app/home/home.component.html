@@ -1,34 +1,39 @@
-<router-outlet></router-outlet>
 <section class="top-section">
-  <nav class="navbar bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"> FIGMA LAND </a>
-      <a class="navbar-brand" href="#"> Home </a>
-      <a class="navbar-brand" href="#"> Product </a>
-      <a class="navbar-brand" href="#"> Pricing </a>
-      <a class="navbar-brand" href="#"> About </a>
-      <a class="navbar-brand" href="#"> Contact </a>
+  <!-- <nav class="navbar bg-light"> -->
+  <div class="container-fluid navbar">
+    <a class="navbar-brand figma" href="#"> FIGMA LAND </a>
+    <a class="navbar-brand" href="#"> Home </a>
+    <a class="navbar-brand" href="#"> Product </a>
+    <a class="navbar-brand" href="#"> Pricing </a>
+    <a class="navbar-brand" href="#"> About </a>
+    <a class="navbar-brand" href="#" routerLink="/contact"> Contact </a>
 
-      <div class="input-group mb-3">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Your Email"
-          aria-label="Username"
-        />
-      </div>
-      <button type="button" class="btn btn-primary">Subscribe</button>
+    <div class="input-group">
+      <input
+        type="text"
+        class="form-control header-input"
+        placeholder="Your Email"
+        aria-label="Username"
+      />
     </div>
-  </nav>
+    <button type="button" class="btn btn-primary subscribe-btn">
+      <span class="subscribe-text">Subscribe</span>
+    </button>
+  </div>
+  <!-- </nav> -->
 
-  <div>
-    <div>At your fingertips</div>
-    <div>Lightening fast prototyping</div>
-    <span
-      >Most calendars are designed for teams. Slate is designed for
-      freelancers</span
-    >
-    <button type="button" class="btn btn-primary">Try For Free</button>
+  <div class="text-center">
+    <div class="fingertips">At your fingertips</div>
+    <div class="first">
+      <span class="header">Lightening fast prototyping</span>
+      <span class="sub-text"
+        >Most calendars are designed for teams. Slate is designed for
+        freelancers</span
+      >
+    </div>
+    <button type="button" class="btn btn-primary try-btn">
+      <span class="try-text">Try For Free</span>
+    </button>
     <img src="../assets/macbook.svg" class="macbook" />
   </div>
 </section>

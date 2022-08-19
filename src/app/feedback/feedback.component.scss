@@ -1,0 +1,19 @@
+.back {
+  padding: 15px 7px;
+}
+.send-btn-wrapper {
+  margin-left: 35px;
+
+  .send-btn {
+    padding: 8px 40px;
+    background: #2091f9;
+    border-radius: 35px;
+  }
+
+  .send-btn-text {
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+  }
+}

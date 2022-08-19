@@ -1,3 +1,108 @@
 .top-section {
   background-image: url("../../assets/top-bg.svg");
+  padding: 25px 60px;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 60px;
+
+  .figma {
+    font-size: 25px !important;
+  }
+
+  .navbar-brand {
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+  }
+
+  .input-group {
+    width: 26%;
+  }
+
+  .header-input {
+    padding: 19px 39px;
+    background: #efefef;
+    border: 1px solid #e8e8e8;
+    border-radius: 39px;
+    font-size: 14px;
+  }
+
+  .subscribe-btn {
+    padding: 9px 25px;
+    background: #ffffff;
+    border-radius: 35px;
+
+    .subscribe-text {
+      font-family: "Roboto";
+      font-size: 16px;
+      line-height: 14px;
+      letter-spacing: 0.2px;
+      color: #2091f9;
+    }
+  }
+}
+
+.fingertips {
+  font-family: "Roboto";
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
+
+  .header {
+    font-family: "Roboto";
+    font-size: 46px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  .sub-text {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
+  }
+}
+
+.try-btn {
+  padding: 10px 55px;
+  background: #ffffff;
+  border-radius: 35px;
+  margin-bottom: 40px;
+
+  .try-text {
+    font-family: "Roboto";
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #2091f9;
+  }
+}
+
+.macbook {
+  width: 100%;
 }
