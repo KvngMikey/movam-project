@@ -13,15 +13,6 @@
     font-size: 25px !important;
   }
 
-  .navbar-brand {
-    font-family: "Roboto";
-    font-size: 15px;
-    line-height: 27px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: #ffffff;
-  }
-
   .input-group {
     width: 26%;
   }
@@ -34,12 +25,14 @@
     font-size: 14px;
   }
 
-  .subscribe-btn {
+  .subscribe-btn,
+  .login-btn {
     padding: 9px 25px;
     background: #ffffff;
     border-radius: 35px;
 
-    .subscribe-text {
+    .subscribe-text,
+    .login-text {
       font-family: "Roboto";
       font-size: 16px;
       line-height: 14px;
@@ -48,6 +41,20 @@
     }
   }
 }
+
+.navbar-brand,
+.small-nav {
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+// .small-nav {
+//   color: #000000;
+// }
 
 .fingertips {
   font-family: "Roboto";
@@ -67,7 +74,7 @@
 
   .header {
     font-family: "Roboto";
-    font-size: 46px;
+    font-size: 40px;
     line-height: 57px;
     text-align: center;
     letter-spacing: 0.2px;
@@ -76,14 +83,14 @@
   }
   .sub-text {
     font-family: "Roboto";
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.2px;
     color: #ffffff;
     display: flex;
     flex-wrap: wrap;
-    width: 33%;
+    width: 100%;
   }
 }
 
@@ -105,4 +112,55 @@
 
 .macbook {
   width: 100%;
+}
+
+.small-nav-icon {
+  rotate: -90deg;
+}
+
+.login-btn {
+  margin-right: 17px;
+  margin-left: -6px;
+}
+
+.small-nav-cancel {
+  width: 30%;
+  float: right;
+}
+
+.ham {
+  flex-direction: column;
+  left: 100%;
+  top: 0%;
+  background: #2091f9;
+  position: fixed;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: translateX(-110%);
+  -ms-transform: translateX(-110%);
+  transform: translateX(-110%);
+}
+
+/* Responsiveness */
+
+//ONlY SMALL DEVICES
+@media (max-width: 575.98px) {
+  .navbar {
+    position: relative;
+    left: -20%;
+  }
+}
+
+//TABLETS UPWARDS
+@media (min-width: 768px) {
+  .first {
+    .header {
+      font-size: 46px;
+    }
+
+    .sub-text {
+      font-size: 15px;
+      width: 33%;
+    }
+  }
 }

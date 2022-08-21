@@ -2,24 +2,51 @@
   <!-- <nav class="navbar bg-light"> -->
   <div class="container-fluid navbar">
     <a class="navbar-brand figma" href="#"> FIGMA LAND </a>
-    <a class="navbar-brand" href="#"> Home </a>
-    <a class="navbar-brand" href="#"> Product </a>
-    <a class="navbar-brand" href="#"> Pricing </a>
-    <a class="navbar-brand" href="#"> About </a>
-    <a class="navbar-brand" href="#" routerLink="/contact"> Contact </a>
+    <a class="navbar-brand d-none d-md-flex" href="#"> Home </a>
+    <button type="button" class="btn btn-primary login-btn d-md-none">
+      <span class="login-text">Login</span>
+    </button>
+    <div class="d-md-none">
+      <div (click)="clickIcon()">
+        <img src="../../assets/118737_bars_icon.svg" class="small-nav-icon" />
+      </div>
+      <!-- <span *ngIf="isClicked">How far ?</span> -->
+    </div>
+    <a class="navbar-brand d-none d-md-flex" href="#"> Product </a>
+    <a class="navbar-brand d-none d-md-flex" href="#"> Pricing </a>
+    <a class="navbar-brand d-none d-md-flex" href="#"> About </a>
+    <a class="navbar-brand d-none d-md-flex" href="#" routerLink="/contact">
+      Contact
+    </a>
 
-    <div class="input-group">
+    <div class="input-group d-none d-md-flex">
       <input
         type="text"
         class="form-control header-input"
         placeholder="Your Email"
-        aria-label="Username"
       />
     </div>
-    <button type="button" class="btn btn-primary subscribe-btn">
+    <button
+      type="button"
+      class="btn btn-primary subscribe-btn d-none d-md-flex"
+    >
       <span class="subscribe-text">Subscribe</span>
     </button>
+
+    <div class="ham" *ngIf="isClicked">
+      <span (click)="clickIcon()"
+        ><img src="../../assets/cancel.svg" class="small-nav-cancel"
+      /></span>
+      <a class="navbar-brand small-nav" href="#"> Home </a>
+      <a class="navbar-brand small-nav" href="#"> Product </a>
+      <a class="navbar-brand small-nav" href="#"> Pricing </a>
+      <a class="navbar-brand small-nav" href="#"> About </a>
+      <a class="navbar-brand small-nav" href="#" routerLink="/contact">
+        Contact
+      </a>
+    </div>
   </div>
+
   <!-- </nav> -->
 
   <div class="text-center">

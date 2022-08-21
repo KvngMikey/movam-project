@@ -1,3 +1,7 @@
+.features {
+  margin-bottom: 80px;
+}
+
 .fingertips {
   font-family: "Roboto";
   font-size: 22px;
@@ -31,7 +35,8 @@
     color: #374754;
     display: flex;
     flex-wrap: wrap;
-    width: 24%;
+    width: 75%;
+    margin-bottom: 50px;
   }
 }
 
@@ -63,4 +68,45 @@
   line-height: 27px;
   letter-spacing: 0.2px;
   color: #374754;
+}
+
+/* Responsiveness */
+
+//ONlY SMALL DEVICES
+@media (max-width: 575.98px) {
+  .first-sect {
+    margin-top: 25px;
+    align-items: center;
+  }
+
+  .second-sect {
+    margin-top: 55px;
+    align-items: center;
+  }
+
+  .details {
+    text-align: center;
+    width: 50%;
+  }
+}
+
+//TABLETS UPWARDS
+@media (min-width: 768px) {
+  .first {
+    .sub-text {
+      width: 24%;
+    }
+  }
+
+  .details-wrapper {
+    display: flex;
+  }
+
+  .first-sect {
+    margin-top: 185px;
+  }
+
+  .second-sect {
+    margin-top: 68px;
+  }
 }

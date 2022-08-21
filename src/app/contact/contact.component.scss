@@ -31,7 +31,7 @@
     color: #374754;
     display: flex;
     flex-wrap: wrap;
-    width: 24%;
+    width: 75%;
   }
 }
 
@@ -91,7 +91,7 @@
     background: #f5f5f5;
     border: 1px solid #e8e8e8;
     margin-bottom: 11px;
-    width: 90%;
+    width: 80%;
     margin-left: 37px;
     font-size: 15px;
   }
@@ -120,4 +120,97 @@
 
 .map {
   width: 100%;
+}
+
+.map-small {
+  width: 90%;
+}
+
+.pin-sect-text {
+  width: 60%;
+}
+
+/* Responsiveness */
+
+//ONlY SMALL DEVICES
+@media (max-width: 575.98px) {
+  .row-form {
+    margin-left: 5px;
+  }
+
+  .info-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pin-sect {
+    padding-left: 50px;
+    margin-bottom: 20px;
+  }
+
+  .pin-sect-text {
+    text-align: justify;
+    margin-left: 15px;
+    margin-bottom: 8px;
+  }
+
+  .mobile-sect {
+    position: relative;
+    left: -21%;
+    margin-bottom: 30px;
+  }
+
+  .mobile-sect-img {
+    margin-right: 18px;
+  }
+
+  .mail-sect {
+    position: relative;
+    left: -12%;
+  }
+
+  .mail-sect-img {
+    margin-right: 12px;
+  }
+}
+
+//TABLETS UPWARDS
+@media (min-width: 768px) {
+  .form-wrapper {
+    .name-input,
+    .email-input,
+    .message-input {
+      width: 90%;
+    }
+  }
+
+  .info-items {
+    flex-direction: column;
+  }
+
+  .pin-sect-text {
+    text-align: center;
+  }
+
+  .mobile-sect {
+    margin-right: 50px;
+  }
+
+  .mobile-sect-img {
+    width: 19%;
+    margin-bottom: 21px;
+    margin-top: 6px;
+  }
+
+  .mail-sect-img {
+    width: 17%;
+    margin-bottom: 22px;
+    margin-top: 6px;
+  }
+
+  .first {
+    .sub-text {
+      width: 24%;
+    }
+  }
 }

@@ -22,19 +22,20 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 50px;
 }
 
 .like-icon {
   background-color: aliceblue;
   border-radius: 30px;
   align-self: center;
-  width: 15%;
+  width: 35%;
   margin-bottom: 50px;
 }
 
 .thank-you {
   font-family: "Roboto";
-  font-size: 45px;
+  font-size: 26px;
   line-height: 57px;
   text-align: center;
   letter-spacing: 0.2px;
@@ -49,30 +50,48 @@
 }
 
 .name,
-.email {
-  font-family: "Roboto";
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 57px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #252b42;
-  margin-bottom: 25px;
-}
-
+.email,
 .message {
   font-family: "Roboto";
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 57px;
   text-align: center;
   letter-spacing: 0.2px;
   color: #252b42;
+}
+
+.name,
+.email {
+  margin-bottom: 25px;
 }
 
 .figma-land {
   font-family: "Roboto";
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 0.2px;
   color: #252b42;
+}
+
+/* Responsiveness */
+
+//ONlY SMALL DEVICES
+@media (max-width: 575.98px) {
+}
+
+//TABLETS UPWARDS
+@media (min-width: 768px) {
+  .like-icon {
+    width: 15%;
+  }
+
+  .thank-you {
+    font-size: 45px;
+  }
+
+  .name,
+  .email,
+  .message {
+    font-size: 25px;
+  }
 }
